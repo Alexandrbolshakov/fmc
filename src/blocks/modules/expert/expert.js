@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let index = 0;
 
     function show(index){
-        slides[index].classList.add('active');
+        slides[index].style.display = 'block';
         tabs[index].classList.add('active');
     }
 
@@ -17,7 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function clear_all(){
         slides.forEach(slide=>{
-            slide.classList.remove('active');
+            slide.classList.add('animated');
+            slide.style.display = 'none';
         });
         tabs.forEach(tab=>{
             tab.classList.remove('active');
@@ -46,12 +47,15 @@ window.addEventListener('DOMContentLoaded', () => {
         clear_all();
         change_index(1);        
         show(index);
-
+        slides[index].classList.remove('slideInLeft');
+        slides[index].classList.add('slideInRight');
     });
 
     prev.addEventListener('click', ()=>{
         clear_all();
         change_index(-1);
         show(index);
+        slides[index].classList.remove('slideInRight');
+        slides[index].classList.add('slideInLeft');
     });
 });
