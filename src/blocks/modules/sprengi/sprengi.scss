@@ -1,0 +1,78 @@
+.sprengi{
+    &__wrapper{
+        min-height: 450px;
+        margin: 80px 0;
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 360px);
+        grid-template-rows: repeat(auto-fit, 255px);
+        row-gap: 30px;
+        justify-content: space-between;
+        &-hidden{
+            display: none;
+        }
+    }
+    &__card{
+        border: 1px solid #ececec;
+        position: relative;
+        padding: 0 60px;
+        &-logo{
+            display: block;
+            text-align: center;
+            height: 170px;
+        }
+        &-descr{
+            text-align: center;
+            color: #393939;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 26px;
+        }
+        &-sign{
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+        }
+    }
+    &__arrow{
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+    }
+    &__header{
+        text-align: center;
+        margin-top: 33px;
+        color: #393939;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 37px;
+    }
+    &__solve{
+        border: 1px solid #ececec;
+        position: relative;
+        padding: 0 60px;
+        // display: none;
+        &-logo{
+            display: block;
+            text-align: center;
+            height: 170px;
+        }
+        &-descr{
+            text-align: center;
+            color: #393939;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+        }
+        &-sign{
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+        }
+    }
+    &__solve.active{
+        display: block;
+    }
+}

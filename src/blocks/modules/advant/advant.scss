@@ -1,0 +1,38 @@
+.advant{
+    padding: 80px 0;
+    &__header{
+        width: 371px;
+        color: #393939;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__wrapper{
+        margin-top: 44px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__card{
+        width: 570px;
+        height: 355px;
+        position: relative;
+        img{
+            object-fit: contain;
+            height: 355px;
+        }
+        &-text{
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: center;
+            width: 288px;
+            height: 74px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

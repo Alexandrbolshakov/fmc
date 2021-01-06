@@ -1,0 +1,89 @@
+.footer{
+    min-height: 430px;
+    background-color: $main-color;
+    padding: 49px 0 40px 0;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 3fr 2fr 1fr 1fr;
+    }
+    &__about{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: start;
+        &-title{
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &-logo{
+            margin: 20px 0;
+        }
+        &-descr{
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+            max-width: 377px;
+            line-height: 22px;
+        }
+    }
+    &__modules{
+        &-title{
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        &-list{
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+            list-style-type: none;
+            line-height: 24px;
+        }
+    }
+    &__branch{
+        &-title{
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        &-list{
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+            list-style-type: none;
+            line-height: 24px;
+        }
+    }
+    &__aboutus{
+        &-title{
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+        &-list{
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+            list-style-type: none;
+            line-height: 24px;
+        }
+    }
+    &__divider{
+        height: 1px;
+        background-color: #fff;
+        opacity: 0.3;
+        margin-top: 44px;
+    }
+    &__rights{
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        text-align: center;
+        margin-top: 36px;
+    }
+}

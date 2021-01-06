@@ -1,0 +1,72 @@
+.expert{
+    background: url('../img/bg/expert_bg.png') center center/cover no-repeat;
+    padding: 79px 0 61px 0;
+    &__header{
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35.99px;
+        text-align: center;
+        width: 618px;
+        margin: 0 auto;
+    }
+    &__tabs{
+        width: 843px;
+        height: 65px;
+        border: 1px solid #ffffff;
+        margin: 0 auto;
+        margin-top: 25px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__tab{
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            color: #00c2f0;
+        }
+    }
+    &__tab.active{
+        color: #00c2f0;
+    }
+    &__divider{
+        height: 49px;
+        width: 1px;
+        background-color: #fff;        
+        opacity: 0.4;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+    }
+    &__slider{
+        width: 947px;
+        height: 560px;
+        margin: 0 29px;
+        background: url('../img/bg/macbook-air_bg.png') center center/cover no-repeat;
+        position: relative;
+        &-item{
+            display: none;
+            position: absolute;
+            top: 37px;
+            left: 126px;
+            img{
+                width: 696px;
+                object-fit: contain;
+            }
+        }
+        &-item.active{
+            display: block;
+        }
+    }
+    &__prev, &__next{
+        cursor: pointer;
+    }
+}

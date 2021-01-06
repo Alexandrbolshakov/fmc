@@ -1,0 +1,88 @@
+.options{
+    &__bg{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    &__left{
+        height: 580px;
+        background: url('../img/photo/options_cloud.png') center center/cover no-repeat;
+        z-index: -1;
+    }
+    &__right{
+        height: 580px;
+        background: url('../img/photo/options_serv.png') center center/cover no-repeat;
+        z-index: -1;
+    }
+    &__header{
+        width: 371px;
+        height: 63px;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35.99px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__wrapper{
+        position: absolute;
+        top: -500px;
+    }
+    &__block{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__card{
+        position: relative;
+        &-sql{
+            width: 167px;
+            height: 167px;
+            background-color: rgba(#00c2f0, 0.3);
+            position: absolute;
+            top: 80px;
+            right: 45px;
+            z-index: 2;
+        }
+        &-sqr{
+            width: 167px;
+            height: 167px;
+            background-color: rgba(#00c2f0, 0.3);
+            position: absolute;
+            top: 80px;
+            left: 45px;
+            z-index: 2;
+        }
+        &-title{
+            width: 390px;
+            height: 27px;
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+            z-index: 5;
+            position: absolute;
+            top: 100px;
+            &-l{
+                right: 40px;
+            }
+            &-r{
+                left: 70px;
+            }
+        }
+        &-text{
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 300;
+            z-index: 5;
+            margin-top: 160px;
+            &-l{
+                margin-right: 75px;
+                text-align: right;
+            }
+            &-r{
+                margin-left: 75px;
+                text-align: left;
+            }
+        }
+    }
+
+}

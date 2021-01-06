@@ -1,0 +1,31 @@
+.header{
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__card{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 19px 0;
+        &-flag{
+            display: block;
+            margin-right: 11px;
+        }
+        &-name{
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+        &-address, &-phone{
+            font-weight: 300;
+            color: #242424;
+            font-size: 12px;
+        }
+        &-phone{
+            text-decoration: none;
+        }
+    }
+}
