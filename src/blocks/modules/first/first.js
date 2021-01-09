@@ -9,15 +9,36 @@ window.addEventListener('DOMContentLoaded', ()=>{
     const slider_back_items = document.querySelectorAll('.first__main-back-img');
     let index = 0;
 
+    function anim(){
+        slider_items.forEach(item=>{
+            item.classList.add('animated');
+        });
+        slider_back_items.forEach(item=>{
+            item.classList.add('animated');
+        });
+    }
+    anim();
+
     function show_slide(index){
         drops[index].classList.add('active');
-        slider_items[index].classList.add('active');
-        slider_back_items[index].classList.add('active');
+        // slider_items[index].classList.add('active');
+        // slider_back_items[index].classList.add('active');
+        slider_items[index].classList.add('fadeIn');
+        slider_items[index].style.display = 'block';
+        slider_back_items[index].classList.add('fadeIn');
+        slider_back_items[index].style.display = 'block';
     }
 
     show_slide(index);
 
     function clear_all(row){
+        
+        row.forEach(item=>{
+
+            item.style.display='none';
+        })
+    }
+    function clear_drops(row){
         row.forEach(item=>{
             item.classList.remove('active');
         });
@@ -35,7 +56,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
     }
 
     slider_next.addEventListener('click', ()=>{
-        clear_all(drops);
+        clear_drops(drops);
         clear_all(slider_items);
         clear_all(slider_back_items);
         change_index(1);        
@@ -44,11 +65,20 @@ window.addEventListener('DOMContentLoaded', ()=>{
     });
 
     slider_prev.addEventListener('click', ()=>{
-        clear_all(drops);
+        clear_drops(drops);
         clear_all(slider_items);
         clear_all(slider_back_items);
         change_index(-1);
         show_slide(index);
+    });
+
+    drops.forEach((drop, i)=>{
+        drop.addEventListener('click', ()=>{
+            clear_drops(drops);
+            clear_all(slider_items);
+            clear_all(slider_back_items);
+            show_slide(i);
+        });
     });
 
 });

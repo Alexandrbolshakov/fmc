@@ -1,4 +1,7 @@
 .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 241px;
     height: 60px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
@@ -9,8 +12,7 @@
     font-weight: 700;
     text-align: center;
     cursor: pointer;
-    :focus{
+    :active, :focus{
         outline: none;
-        box-shadow:none;
     }
 }

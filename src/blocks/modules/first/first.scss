@@ -45,6 +45,7 @@
         grid-template-columns: 525px 434px;
         grid-template-rows: 370px 235px;
         justify-content: space-between;
+        position: relative;
         &-points{
             position: relative;
             &-wrap{
@@ -75,8 +76,8 @@
             background-color: rgba($color: #ffffff, $alpha: 0.0);
             border: none;
             cursor: pointer;
-            :focus{
-                outline: none;
+            img{
+                display: block;
             }
             }
         &-slider{
@@ -109,9 +110,6 @@
             &-img{
                 width: 270px;
                 height: 469px;
-                display: none;
-            }
-            &-img.active{
                 display: block;
                 position: absolute;
                 top: 89px;
@@ -128,8 +126,6 @@
             width: 270px;
             height: 469px;
             display: none;
-        }
-        &-img.active{
             position: absolute;
             width: 270px;
             height: 469px;
